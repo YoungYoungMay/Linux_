@@ -1,0 +1,8 @@
+test1 : test1.c
+	gcc -o $@ $^
+//%.o : %.c
+	//gcc -g $^ -o $@
+
+.PHONY:clean
+clean :
+	rm -vf *.o test1
